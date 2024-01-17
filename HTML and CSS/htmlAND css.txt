@@ -1,0 +1,285 @@
+UI BASICS
+
+UX, User experience .
+• The full experience from user’s first contact to last
+• Facilitate the best feeling a user receives while operating on device
+
+ID, Interaction Design.
+• Interaction of the user and the system
+• Goal oriented and the way users will interact, user needs, limitations a context
+
+UI, User interface , 
+Visual touch points that allow user to interact with a product -> Graphics
+
+ UX is basically a subset of product design
+• Product design is business oriented
+– Consistently successful product
+– Branding and marketing
+– Identifying market opportunity
+
+wireframe:
+(General features and content of an user interface without graphical details.)
+Evaluating logic
+No graphic detail, easier to focus on the UI logic and navigation
+Can be static or interactive
+UI skeleton is basically a wireframe in mobile design.
+When wireframe is ready, the UI designer starts interface design
+Not technical limitations
+
+prototypes:
+(Final model of the product that are able to simulate real interactions.)
+• Final model of the product
+• Visual and functional elements, buttons and field
+• Stakeholders , designers and users can test the prototype
+• Simulating real interactions
+
+mockups:
+(Design that consist of colors, logos, pictures etc. that shows how the product will look but do not contain any real interactions.)
+More detailed design
+Colors, logos, pictures
+May contain demo content instead of ”real” final content
+Shows how the product will look
+Level of detail
+Static vs clickable
+Single or multipage
+SW tools like Adobe XD, Pencil, Sketch, Figma, Axure etc.
+
+UI design principles
+– Visibility
+– Consistency
+– Learnability
+– Predictability
+– Feedback
+
+Visibility
+• Choose what to show  avoid visual information fatigue
+• Show only what is really needed . User should not use time to search
+what he needs
+• User should quickly see how and where to achieve goal
+• UI components , colors , size , layout, logical order
+
+Consistency
+• How user makes sense of the UI
+• Consistency is achieved by using similar patterns for
+– Color
+– Typography
+– Element location
+– Function location
+– Process steps
+• Keep things simple!
+
+Learnability
+• UI usage should be easy to learn for the user
+– Novice vs technical expert
+• Familiarities
+– Common design conventions and layouts (logout in right upper
+corner)
+– Commonly used terminology (like login, register)
+– Direction of flow (e.g. ok is left, cancel is right)
+• Feedback
+• Help and tooltips
+
+
+Predictability
+(That applications or devices actions are predictable to user.)
+• What action I should take to reach the goal?
+• Using familiar widgets and group of widgets
+• Familiar processes
+– Like buying a product using shopping chart and familiar payment
+steps.
+• Predictability and learnability have similarities
+• User could e.g. see the steps of process before executing them
+• Some actions should be predicted
+–E.g. closing document should always confirm that the document is
+saved.
+
+Feedback
+• Where am I now?
+• What is the next step?
+• What is the current status?
+• What happened?
+• E.g. Confirmation that the process was successful
+• Error feedback and how to fix it
+
+HTML
+
+What does HTML stand for?
+Hyper Text Markup Language
+
+Which HTML tag is used to create a hyperlink?
+<a>
+
+What is the purpose of the <head> element in an HTML document?
+It contains metadata about the document.
+
+What does the HTML element <img> stand for?
+Image
+
+Which attribute is used to specify the source URL of an image in the <img> tag?
+src - Specifies the path to the image. 
+
+Which HTML tag is used to create a line break?
+<br>
+
+What HTML tag is used to create a table in a web page?
+<table>
+
+Which HTML tag is used to define the header row in an HTML table?
+<tr>
+
+Which HTML element is used to create a form?
+<form>
+
+What is the purpose of the <input> element in an HTML form?
+To accept user input
+
+Which attribute is used in the <form> element to specify the URL where the form data should be sent for processing?
+action
+
+<mark>
+Highlighting text
+
+<sup> 
+Adding superscript to text
+
+<sub>
+Adding subscript to text
+
+<del>
+Deleted text (overline)
+
+<ins>
+inserted text (underline)
+
+<b>
+bold
+
+<i>
+italic
+
+<abbr>
+Abbreviation/legend for text
+
+<address>
+Address tag is used to make content display as address
+
+CSS
+
+*
+ Selects all elements
+
+p
+ Selects defined element/elements
+
+.example
+ Select the element by class declaration.
+ You may also combine element type with class
+
+#highlight
+ Select an element (only one, unique) by an id. There
+should always be just one element with same id.
+input[type=”submit”]
+ Selects element/elements by attribute name-value.
+Attribute selector
+
+Contains additional definitions
+ ^ attribute starts
+ $ attribute ends
+ * attribute contains (any substrint)
+ ~ attribute contains word (full word)
+
+#main-menu > li
+ Selects direct children of an element.
+
+#main-menu a
+ Select descendans of an element  Alls elements inside
+the selector element. 
+
+div+p
+ Select all p-elements that are following right after div
+element.
+
+p ~ a
+ Selects every a element that is preceded right before p
+element inside same parent element
+
+Element state
+ E.g. a:hover
+ Used to add effects into document
+Structural
+ td:first-child
+ E.g. selecting by order
+
+td:first-child
+ first, first-letter, nth-child, after, before
+
+Selectors may be grouped by comma.
+Declaration affects all of them.
+ Avoiding repetition
+ 2px padding for all data cells and header cells
+
+Properties for background
+ background-color
+ background-image
+ background-repeat
+ background-size
+
+Properties for text
+ color
+ text-align
+ text-decoration
+ Text-transform
+ Text-indent
+ indentation
+ line-height
+
+Properties for font
+ font-family
+ font-size
+ font-style
+ font-weight
+
+ Margin is the space outside the element
+p { margin: 5px; }
+ Padding is the space inside the element
+p { padding: 5px; }
+ In web pages the empty space improves the readability.
+
+ px (pixe)
+ mm (millimeter)
+ cm (centimeter)
+ in (inch), 1 inch is 96px  2.54cm
+ pt (point), 1 pt is 1/72 inches
+ pc (pica), 1 pc is 12 pt
+ % (percent)
+ em (relative to element font size)
+ rem (relative to root element font size)
+ 1vw (1% of browser width)
+ 1vh (1% of browser length)
+ ch (relative to “0” character font size)
+article 0.8em = 0.8 x 24 px = 19.2px
+ h1 1.5em = 1.5 x 24 px = 36px
+ h2 1.2em = 1.2 x 19.2px = 23.04px
+article 0.8rem = 0.8 x 20 px = 16px
+ h1 1.5rem = 1.5 x 20 px = 30px
+ h2 1.2em = 1.2 x 20px = 24px 
+
+
+What does CSS stand for?
+Cascading Style Sheets
+
+How can you select all <p> elements that are directly nested within a <div> element using CSS?
+div > p
+
+Which CSS property is used to change the color of an element's text when a user hovers over it?
+:hover
+
+Which CSS property is used to add a background image to an element?
+background-image
+
+Which CSS property is used to change the style of a list item marker (such as a bullet or number)?
+list-style-type
+
+Which HTML tag is used to link an external CSS file to an HTML document?
+<link>
+
